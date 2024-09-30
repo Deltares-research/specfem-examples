@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.vscode
+
+# C extensions
+*.so
+
+#output files
+OUTPUT_FILES/
+
+#wsl crap
+*.Identifier
+
+# VS-Code
+*.code-workspace
+
+# pixi environments
+.pixi
