@@ -8,10 +8,14 @@ __pycache__/
 # C extensions
 *.so
 
-#output files
-OUTPUT_FILES/
+#output files should not be included
+*.semd
+*.bin
+*.jpg
+*.vtk
+*.ps
 
-#wsl crap
+#wsl identifier files
 *.Identifier
 
 # VS-Code
