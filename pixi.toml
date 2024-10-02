@@ -9,9 +9,10 @@ platforms = ["linux-64"]
 #linux = "4.18"
 
 [tasks]
-# setting environment variables
-specfem_root = "export SPECFEM2D_ROOT = $pwd"
-add_to_path = "export PATH = $PATH:$SPECFEM2D_ROOT/bin:."
+# setting environment variables add to bash config file and path
+specfem_root = """grep -q '^export SPECFEM2D_ROOT=' "$HOME/.bashrc" && sed -i "/^export SPECFEM2D_ROOT=/c\\export SPECFEM2D_ROOT=$(pwd)" "$HOME/.bashrc" || echo 'export SPECFEM2D_ROOT='$(pwd) >> "$HOME/.bashrc""""
+add_to_path = """echo 'if [[ ":$PATH:" != *":$SPECFEM2D_ROOT:"* ]]; then export PATH="$SPECFEM2D_ROOT:$PATH"; fi' >> "$HOME/.bashrc""""
+knots = """source $HOME/.bashrc"""
 envs = { depends_on = ["specfem_root", "add_to_path"]}
 
 #configure and install
