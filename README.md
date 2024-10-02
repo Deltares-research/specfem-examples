@@ -5,13 +5,13 @@ Spectral element acoustic-elastic simulations used in Deltares projects
 
    Navigate to folder where you would like to clone and install specfem2d (in my case gitclones folder) and clone:
 
-   ```bash
+   ```
    cd ~/gitclones
    git clone https://github.com/SPECFEM/specfem2d.git
    ```
    
    Now copy the pixi.toml in the SPECFEM2D folder run (don't run in specfem-examples, this is just a repository of projects):
-   ```bash
+   ```
    pixi run install
    exec bash
    ```
@@ -21,7 +21,8 @@ Spectral element acoustic-elastic simulations used in Deltares projects
    ```
 
 ## Generate MESH files
-Now return to your project folder (e.g. the template example)
+
+    Now return to your project folder (e.g. the template example)
 
     ```bash
     cd ~gitclones/specfem-examples/Template_Gmsh_MPI
@@ -29,12 +30,15 @@ Now return to your project folder (e.g. the template example)
     ```
 
 ## Run Simulation
-    ```bash
+
+    You can run the simulation by:
+
+    ```
     ./run_this_project.sh
     ```
 
 ## Remove the generated mesh and OUTPUT_FILES, type:
-	```bash
+	```
 	./clear_run.sh
     ```
 
