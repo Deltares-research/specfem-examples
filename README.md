@@ -1,7 +1,7 @@
 # specfem-examples
 Spectral element acoustic-elastic simulations used in Deltares projects
 
-# Installation of SPECFEM2D
+## Installation of SPECFEM2D
 
    navigate to folder where you would like to clone and install specfem2d (in my case gitclones folder) and clone:
    > cd ~/gitclones
