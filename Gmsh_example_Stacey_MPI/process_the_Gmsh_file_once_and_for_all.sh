@@ -11,7 +11,7 @@ echo "creating msh file"
 echo
 
 # creates Gmsh mesh
-gmsh schema.geo -2 -format msh22 -o schema.msh
+gmsh SqrCirc.geo -2 -format msh22 -o SqrCirc.msh
 
 # checks exit code
 if [[ $? -ne 0 ]]; then exit 1; fi
@@ -21,7 +21,7 @@ echo "exporting to specfem mesh files"
 echo
 
 # converts to specfem format files
-python $SPECFEM2D_ROOT/utils/Gmsh/LibGmsh2Specfem_convert_Gmsh_to_Specfem2D_official.py schema.msh -t F -l A -b A -r A
+python $SPECFEM2D_ROOT/utils/Gmsh/LibGmsh2Specfem_convert_Gmsh_to_Specfem2D_official.py SqrCirc.msh -t F -l A -b A -r A
 
 # checks exit code
 if [[ $? -ne 0 ]]; then exit 1; fi

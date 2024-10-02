@@ -1,7 +1,7 @@
 ## Source 1
 source_surf                     = .false.        # source inside the medium, or source automatically moved exactly at the surface by the solver
-xs                              = 0.5             # source location x in meters
-zs                              = 0.           # source location z in meters (zs is ignored if source_surf is set to true, it is replaced with the topography height)
+xs                              = 0.             # source location x in meters
+zs                              = 0.75           # source location z in meters (zs is ignored if source_surf is set to true, it is replaced with the topography height)
 ## Source type parameters:
 #  1 = elastic force or acoustic pressure
 #  2 = moment tensor

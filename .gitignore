@@ -9,11 +9,13 @@ __pycache__/
 *.so
 
 #output files should not be included
+**/bin/
 *.semd
 *.bin
 *.jpg
 *.vtk
 *.ps
+*.dx
 
 #wsl identifier files
 *.Identifier
