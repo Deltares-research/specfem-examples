@@ -1,5 +1,5 @@
 # specfem-examples
-spectral element acoustic-elastic simulation used in Deltares projects
+Spectral element acoustic-elastic simulations used in Deltares projects
 
 # Installation of SPECFEM2D
 
@@ -20,7 +20,7 @@ Now return to your project folder (e.g. the template example)
     > cd ~gitclones/specfem-examples/Template_Gmsh_MPI
     > ./process_the_Gmsh_file_once_and_for_all.sh
 
-#Run Simulation
+# Run Simulation
     
      > ./run_this_project.sh
 
