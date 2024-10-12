@@ -57,4 +57,6 @@ Often when you run into errors, file paths are not set correctly in the Par_file
 
 Negative jacobian error is always related to the mesh. Make sure your line loops are all counterclockwise. Take into account in which direction your lines are defined. It is ok to use negative numbers to get the right directions. If this still does not work also try to decrease your cell size (lc parameter).
 
-Floating point errors indicate bad conditioning. You might have to lower your DT value. The code indicates this. Look for the section that includes CFL and adjust according to recommendations
+Floating point errors indicate bad conditioning. You might have to lower your DT value. The code indicates this. Look for the section that includes CFL and adjust according to recommendations.
+- For each run check if the CFL is in the is close to but below 0.5 (lowering the DT value lowers this number, but also lowering the cell size in your mesh set in the (.geo file) and also lowering the highest Vp in the model (nummaterial_velocity file)
+- For each run chekc if the lowest number in the 'histogram of min number of points per S wavelength in solid regions' is higher than 5 (changing the source frequency changes this number)

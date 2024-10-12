@@ -1,12 +1,12 @@
 // levee without burrows
-lc=0.1;
+lc=0.2;
 
-Point(1) = {0, 3, 0, lc};
-Point(2) = {10, 3, 0, lc};
-Point(3) = {10, 0.5, 0, lc};
+Point(1) = {0, 3, 0, lc/2};
+Point(2) = {10, 3, 0, lc/2};
+Point(3) = {10, 0.5, 0, lc/2};
 Point(4) = {10, 0, 0, lc};
 Point(5) = {0, 0, 0, lc};
-Point(6) = {0, 0.5, 0, lc};
+Point(6) = {0, 0.5, 0, lc/2};
 
 Line(1) = {1, 2};
 Line(2) = {2, 3};
