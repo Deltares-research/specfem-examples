@@ -24,7 +24,7 @@ Spectral element acoustic-elastic simulations used in Deltares projects
 
     Now return to your project folder (e.g. the template example)
 
-    ```bash
+    ```
     cd ~gitclones/specfem-examples/Template_Gmsh_MPI
     ./process_the_Gmsh_file_once_and_for_all.sh
     ```
@@ -59,4 +59,5 @@ Negative jacobian error is always related to the mesh. Make sure your line loops
 
 Floating point errors indicate bad conditioning. You might have to lower your DT value. The code indicates this. Look for the section that includes CFL and adjust according to recommendations.
 - For each run check if the CFL is in the is close to but below 0.5 (lowering the DT value lowers this number, but also lowering the cell size in your mesh set in the (.geo file) and also lowering the highest Vp in the model (nummaterial_velocity file)
-- For each run chekc if the lowest number in the 'histogram of min number of points per S wavelength in solid regions' is higher than 5 (changing the source frequency changes this number)
+- For each run check if the lowest number in the 'histogram of min number of points per S wavelength in solid regions' is higher than 5 (changing the source frequency changes this number)
+- It is good practice to include CFL and min points per wavelength in your simluations logbook
