@@ -16,13 +16,12 @@ Spectral element acoustic-elastic simulations used in Deltares projects
    exec bash
    ```
    To test the install run:
-   ```bash
+   ```
    pixi run example
    ```
 
 ## Generate MESH files
-
-    Now return to your project folder (e.g. the template example)
+Now return to your project folder (e.g. the template example) kaas
 
     ```
     cd ~gitclones/specfem-examples/Template_Gmsh_MPI
@@ -31,11 +30,9 @@ Spectral element acoustic-elastic simulations used in Deltares projects
 
 ## Run Simulation
 
-    You can run the simulation by:
+You can run the simulation by:
 
-    ```
-    ./run_this_project.sh
-    ```
+    run_this_project.sh
 
 ## Remove the generated mesh and OUTPUT_FILES, type:
 	```

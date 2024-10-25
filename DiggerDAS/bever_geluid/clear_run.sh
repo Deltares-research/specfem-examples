@@ -25,6 +25,7 @@ else
 fi
 
 rm *.dx
-rm *.txt
+rm log.txt
+find . -type f -name '*.Identifier' -exec rm {} +
 
 echo "all outfiles from meshing and running removed.."

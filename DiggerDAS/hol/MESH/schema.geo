@@ -1,4 +1,4 @@
-// levee without burrows
+// levee partially water filled beaver hole
 lc=0.2;
 
 Point(1) = {0, 3, 0, lc/2};

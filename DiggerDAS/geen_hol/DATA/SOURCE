@@ -37,9 +37,9 @@ time_function_type              = 1
 # If time_function_type == 8, enter below the custom source file to read (two columns file with time and amplitude) :
 # (For the moment dt must be equal to the dt of the simulation. File name cannot exceed 150 characters)
 # IMPORTANT: do NOT put quote signs around the file name, just put the file name itself otherwise the run will stop
-name_of_source_file             = YYYYYYYY       # Only for option 8 : file containing the source wavelet
+name_of_source_file             = dummy       # Only for option 8 : file containing the source wavelet
 burst_band_width                = 0.             # Only for option 9 : band width of the burst
-f0                              = 30.0           # dominant source frequency (Hz) if not Dirac or Heaviside
+f0                              = 300.0           # dominant source frequency (Hz) if not Dirac or Heaviside
 tshift                          = 0.0            # time shift when multi sources (if one source, must be zero)
 ## Force source
 # angle of the source (for a force only); for a plane wave, this is the incidence angle; for moment tensor sources this is unused
