@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of subfolder paths
-subfolders=( "base5" "hole5")
+subfolders=( "hol" "geen_hol" "bever_geluid" )
 
 # Loop through each subfolder and run the script
 for folder in "${subfolders[@]}"; do
